@@ -37,6 +37,11 @@ There is an intermediate step, going through ```.bed``` files.
 ```python
 python3 hvcf2bed.py <input.h.vcf.gz>
 ```
+And then, adapt the columns to required format for SyntenyPlotteR:
+```python
+python3 bed2align.py <input.bed>
+```
+
 As output you will get: ```input.h_alignment.txt```
 
 This file is actually already an alignment between the reference genome used to build the PHG database and your query genome providing from the ```h.vcf.gz``` file.
